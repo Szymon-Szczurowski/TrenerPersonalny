@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trener Personalny</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
     <link rel="stylesheet" href="/css/main.css">
 
@@ -20,7 +20,7 @@
 
 </head>
 
-<body>
+<body class="diagonal-lines">
 
 
     <nav class="nav">
@@ -43,74 +43,214 @@
                 <hr>
                 <a href="#" class="nav__menu-item">Strona Główna</a>
                 <hr>
-                <a href="#" class="nav__menu-item">Oferta</a>
+                <a href="#about-me" class="nav__menu-item">O mnie</a>
                 <hr>
-                <a href="#" class="nav__menu-item">O mnie</a>
+                <a href="#offers" class="nav__menu-item">Oferta</a>
                 <hr>
-                <a href="#" class="nav__menu-item">Kontakt</a>
-                
+                <a href="#contact" class="nav__menu-item">Kontakt</a>
+
             </div>
         </div>
 
         <div class="nav__items">
-            <a href="" class="nav__item">Strona Główna</a>
-            <a href="" class="nav__item">Oferta</a>
-            <a href="" class="nav__item">O mnie</a>
-            <a href="" class="nav__item">Kontakt</a>
+            <a href="#" class="nav__item">Strona Główna</a>
+            <a href="#about-me" class="nav__item">O mnie</a>
+            <a href="#offers" class="nav__item">Oferta</a>
+            <a href="#contact" class="nav__item">Kontakt</a>
         </div>
 
     </nav>
 
-
-    <header class="header">
+    <header class="header header-zero" id="main">
         <p class="header__text">trener</p>
         <p class="header__text">personalny</p>
         <p class="header__text">gdańsk</p>
         <a href="" class="header__btn">zobacz ofertę</a>
-
     </header>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <div id="carouselExampleSlidesOnly" class="carousel slide header-carousel" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <header class="header header-first">
+                    <p class="header__text">trener</p>
+                    <p class="header__text">personalny</p>
+                    <p class="header__text">gdańsk</p>
+                    <a href="" class="header__btn">zobacz ofertę</a>
+                </header>
+            </div>
+            <div class="carousel-item">
+                <header class="header header-second">
+                    <p class="header__text">ćwiczenia </p>
+                    <p class="header__text">i plany</p>
+                    <p class="header__text">treningowe</p>
+                    <a href="" class="header__btn">zobacz ofertę</a>
+                </header>
+            </div>
+            <div class="carousel-item">
+                <header class="header header-third">
+                    <!-- <p class="header__text">tworzenie</p>
+                    <p class="header__text">spersonalizowanej</p>
+                    <p class="header__text">diety</p> -->
+                    <p class="header__text">przeprowadzanie</p>
+                    <p class="header__text">treningów</p>
+                    <!-- <p class="header__text">inwid</p> -->
+                    <a href="" class="header__btn">zobacz ofertę</a>
+                </header>
+            </div>
+        </div>
+    </div>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+<main class="main">
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <section class="about-me section-padding" id="about-me">
+    <div class="wrapper">
+        <h2 class="section-heading">o mnie</h2> 
 
-    <br>
-    <br>
+        <div class="about-me__box about-me__box-first">
+
+            <div class="about-me__contents">
+                <h3 class="about-me__title">Doświadczenie</h3>
+                <p class="about-me__text">Jestem doświadczonym trenerem personalnym z wieloletnim stażem. Pomagam ludziom osiągać ich cele fitness i poprawiać ich zdrowie poprzez indywidualne treningi i doradztwo dietetyczne.</p>
+            </div>
+            <div class="about-me__img about-me__img--first"></div>
+
+             <div class="about-me__contents">
+                <h3 class="about-me__title">Profesjonalizm</h3>
+                <p class="about-me__text">Jestem profesjonalnym trenerem personalnym o wysokich kwalifikacjach i doświadczeniu. Dbam o bezpieczeństwo i skuteczność treningów moich klientów. Jestem punktualny i rzetelny w swoich obowiązkach</p>
+             </div>
+             <div class="about-me__img about-me__img--second"></div>
+           
+        </div>
+
+
+        
+        <div class="about-me__box about-me__box-second">
+
+            <div class="about-me__contents about-me__contents--first">
+                <h3 class="about-me__title">Jakość</h3>
+                <p class="about-me__text">Prowadzę wysokiej jakości treningi personalne, dostosowane do indywidualnych potrzeb i możliwości moich klientów. Staram się zawsze dostarczać ciekawych i skutecznych programów treningowych. </p>
+            </div>
+            <div class="about-me__img about-me__img--third"></div>
+
+             <div class="about-me__contents about-me__contents--second">
+                <h3 class="about-me__title">Cena</h3>
+                <p class="about-me__text">Jestem trenerem personalnym oferującym wysokiej jakości treningi w przystępnych cenach. Staram się dostosować do indywidualnych możliwości finansowych moich klientów i oferuję różne opcje cenowe.</p>
+             </div>
+             <div class="about-me__img about-me__img--fourth"></div>
+           
+        </div>
+    </div>
+</section>
+
+
+    <section class="offers section-padding" id="offers">
+        <div class="wrapper">
+            <h2 class="section-heading">Oferta</h2>
+
+            <p class="offers__text offers__depicition">Oferuje indywidualne treningi personalne, pakiety treningowe oraz zajęcia grupowe dla osób chcących poprawić swoją formę fizyczną i osiągnąć założone cele. Datkowymi atutami mojej oferty jest <b>wsparcie dietetyczne oraz dostęp do specjalistycznego sprzętu</b>. Treningi grupowe to także świetna okazja do zmotywowania się do <b>regularnej aktywności fizycznej</b> i poznania nowych ludzi o podobnych zainteresowaniach.</p>
+
+      
+
+            <div class="offers__content">
+
+            <div class="offers__box diagonal-lines">
+                <div class="offers__img">
+                    <img src="./img/abs-1850926_1280.jpg" alt="Kobieta wykonująca ćwiczenie przy pomocy dwóch sznurów">
+                </div>
+
+                <div class="offers__description">
+                    <h3 class="offers__title">Pojedynczy trening</h3>
+                    <p class="offers__text">Oferuję indywidualne treningi personalne, <b>dostosowane do potrzeb i możliwości</b> moich klientów.</p>
+                    <hr>
+                    <p class="offers__text">Pomagam w osiągnięciu założonych celów, takich jak <b> poprawa wydolności fizycznej, zwiększenie siły i masy mięśniowej, czy redukcja tkanki tłuszczowej</b></p>
+                    <hr>
+                    <p class="offers__text">Posiadam <b>szerokie doświadczenie i wiedzę z zakresu treningu i odżywiania</b>, dzięki czemu mogę doradzić w kwestiach dotyczących zdrowego trybu życia.</p>
+                    <hr>
+                    <p class="offers__text">Do każdego klienta podchodzę <b>indywidualnie</b>, starając się zrozumieć jego potrzeby i oczekiwania.</p>
+                    <hr>
+                    <p class="offers__text">Oferuję różnorodne formy treningu, takie jak <b>trening siłowy, trening cardio, czy trening funkcjonalny</b>, dostosowane do preferencji i możliwości każdego z moich klientów.</p>
+
+                    <div class="offers__price"><span> 100 zł </span></div>
+                </div>
+            </div>
+
+            <div class="offers__box offers__box-middle diagonal-lines">
+                <div class="offers__img">
+                    <img src="./img/offers-2.jpg" alt="Kobieta pokazujące umięśnione ręce">
+                </div>
+
+                <div class="offers__description">
+                    <h3 class="offers__title">Pakiet treningów</h3>
+                    <p class="offers__text">Pakiet treningów składa się z <b>12 indywidualnych sesji treningowych</b>.</p>
+                    <hr>
+                    <p class="offers__text">Każda sesja trwa około 60 minut i jest <b>dostosowana do poziomu</b> zaawansowania i celów moich klientów.</p>
+                    <hr>
+                    <p class="offers__text"> W ramach pakietu oferuje także <b>dostęp do specjalistycznego sprzętu treningowego</b> oraz pomoc w kwestiach dotyczących odżywiania.</p>
+                    <hr>
+                    <p class="offers__text">Po zakończeniu pakietu treningów, oferuje <b>możliwość przedłużenia współpracy</b> lub skorzystania z pojedynczych sesji treningowych.</p>
+                    <hr>
+                    <p class="offers__text">W trakcie trwania pakietu treningów stale <b>monitoruję postępy moich klientów</b> i dostosowuję plan treningowy do ich aktualnych potrzeb i celów.</p>
+                    
+                    <div class="offers__price"><span>900 zł</span> </div>
+                </div>
+            </div>
+
+            <div class="offers__box diagonal-lines">
+                <div class="offers__img">
+                    <img src="./img/offers-3.jpg" alt="Grupa mężczyzn spoglądająca na mężczyzne podnoszące sztangę">
+                </div>
+
+                <div class="offers__description">
+                    <h3 class="offers__title">Trening w grupie</h3>
+                    <p class="offers__text"> Oferuje <b>zajęcia grupowe</b> dla osób chcących aktywnie spędzić czas i poprawić swoją formę fizyczną.</p>
+                    <hr>
+                    <p class="offers__text"><b>Treningi grupowe odbywają się raz w tygodniu</b> i trwają około 60 minut.</p>
+                    <hr>
+                    <p class="offers__text">W trakcie treningu <b>wykorzystujemy różnorodne akcesoria</b> i sprzęt, takie jak hantle, kettlebell, gumy oporowe, czy piłki lekarskie.</p>
+                    <hr>
+                    <p class="offers__text">Treningi grupowe to świetna <b>okazja do zmotywowania się do regularnej aktywności fizycznej</b> i poznania nowych ludzi o podobnych zainteresowaniach.</p>
+                    <hr>
+                    <p class="offers__text">Treningi grupowe są <b>dostosowane do różnych poziomów zaawansowania</b>, dzięki czemu każdy znajdzie coś dla siebie.</p>
+
+                    <div class="offers__price"><span>60 zł</span></div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <section class="contact section-padding">
+        <div class="contact__box">
+
+            <h2 class="contact__heading">contact</h2>
+
+            <form action="https://formspree.io/f/mdojqbwr" method="POST">
+
+                <input class="contact__input" type="text" name="Name" placeholder="Full name" required>
+
+                <input class="contact__input" type="email" name="Email" placeholder="Email" required>
+        
+
+                <textarea class="contact__input" name="Message" placeholder="Message"></textarea>
+
+   
+
+                <button type="submit" onclick="document.getElementById('contact').reset();">Send</button>
+            </form>
+
+
+        </div>
+    </section>
+</main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 
     <script src="./js/main.js"></script>
+    <script src="./js/carousel.js"></script>
 </body>
 
 </html>

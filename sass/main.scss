@@ -16,6 +16,16 @@ html {
 
 body {
 	font-family: 'Hind Siliguri', sans-serif;
+	font-family: 'Poppins', sans-serif;
+	// background-color: #cdd2d6de;
+	// background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url('../img/pexels-henry-&-co-1939485.jpg');
+	// background-position: center;
+	// background-size: cover;
+	// background-attachment: fixed;
+	// background-color: linear-gradient(#F5F7FA,#B8C6DB );
+	// background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+
+	background-color: rgb(250, 248, 248);
 }
 
 // ------------------------------------------------------
@@ -108,21 +118,16 @@ body {
 		&-bars--dark::after,
 		&-bars--dark::before {
 			background-color: $item-color !important;
-			
 		}
 
 		&-bars--dark-scroll,
 		&-bars--dark-scroll::after,
 		&-bars--dark-scroll::before {
 			background-color: $item-color !important;
-			
 		}
-
-
 
 		&-bars {
 			width: 100%;
-
 		}
 		&-bars::after {
 			top: 10px;
@@ -156,15 +161,21 @@ body {
 	position: relative;
 	height: 100vh;
 	width: 100%;
-	background-image: $linear, url('../img/header-min.jpg');
 	background-position: center;
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: center;
-	text-align: left;
 	padding-left: 3em;
+
+	&-carousel {
+		display: none;
+	}
+
+	&-zero {
+		background-image: $linear, url('../img/header-min-1.jpg');
+	}
 
 	&__text {
 		color: $main-color;
@@ -179,6 +190,7 @@ body {
 		font-size: 2rem;
 		margin-top: 1.5em;
 		padding: 0.5em 1em;
+		border-radius: 5px;
 		color: $main-color;
 		background-color: #e79107;
 		-webkit-box-shadow: 0px 1px 23px -6px rgba(231, 145, 7, 1);
@@ -189,6 +201,169 @@ body {
 		&:hover {
 			transform: scale(1.1);
 			background-color: #ff9f00;
+			color: $main-color;
+		}
+	}
+}
+
+// ------------------------------------------------------
+// ABOUT-ME
+// ------------------------------------------------------
+
+.about-me {
+	&__box {
+		overflow: hidden;
+	}
+	&__contents {
+		padding: 2em;
+		background-color: #f19707;
+		color: $main-color;
+		text-align: center;
+	}
+
+	&__title {
+		font-size: 2.5rem;
+		margin: 0.5em 0;
+		font-weight: 700;
+	}
+
+	&__text {
+		font-size: 1.8rem;
+	}
+
+	&__img {
+		height: 45vh;
+		padding: 2em;
+		width: 100%;
+		background-position: center;
+		background-size: cover;
+		transition: transform 0.2s;
+
+		// &:hover{
+		// 	transform: scale(1.05);
+		// 	-webkit-transform: scale(1.05);
+		// 	-moz-transform: scale(1.05);
+
+		// }
+
+		&--first {
+			background-image: url('../img/header-min-1.jpg');
+		}
+
+		&--second {
+			background-image: url('../img/about-1.jpg');
+		}
+
+		&--third {
+			background-image: url('../img/about-2.jpg');
+		}
+
+		&--fourth {
+			background-image: url('../img/about-3.jpg');
+		}
+	}
+}
+
+// ------------------------------------------------------
+// OFFERS
+// ------------------------------------------------------
+
+.offers {
+	// background-color: #f1f1f1 !important;
+	background-image: $linear-offers, url('../img/sports-966991_1920.jpg');
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	.wrapper {
+		max-width: 1250px;
+	}
+
+	.section-heading{
+		color: $main-color;
+	}
+
+	&__depicition {
+		position: relative;
+		text-align: center;
+		color: $main-color;
+		letter-spacing: 0.5px;
+		font-size: 2rem !important;
+
+	}
+
+	.section-heading {
+		margin-bottom: 0.5em;
+	}
+
+	&__content {
+		margin-top: 4em;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		justify-content: center;
+	}
+
+	&__box {
+		background-color: $main-color;
+		max-width: 270px;
+		margin-bottom: 2em;
+		margin-right: 2em;
+
+		border-right: 4px solid #ff9f00;
+	}
+
+	&__description {
+		position: relative;
+		padding: 1em 2em;
+		padding-bottom: 10em;
+		min-height: 420px;
+		overflow: hidden;
+	
+	}
+
+	&__title {
+		text-align: center;
+		font-size: 2.4rem;
+		margin: 1em 0;
+		text-transform: uppercase;
+	}
+
+	&__text {
+		font-size: 1.4rem;
+	}
+
+	&__price {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		background-color: #ff9f00;
+		text-align: center;
+		padding: 1em ;
+		z-index: 1000;
+		transition: transform 0.5s ease 0s;
+
+		span{
+			color: $main-color;
+			font-size: 1.8rem;
+		}
+
+		&:hover{
+			transform: scale(1.2);
+		}
+		
+	}
+
+	&__img {
+		overflow: hidden;
+
+		img {
+			height: 300px;
+			width: 270px;
+			transition: transform 0.5s ease 0s;
+			&:hover {
+				transform: scale(1.2);
+			}
 		}
 	}
 }
@@ -220,6 +395,25 @@ body {
 			padding: 0.5em 1em;
 		}
 	}
+
+	// ------------------------------------------------------
+	// OFFERS
+	// ------------------------------------------------------
+
+	.offers {
+		&__box {
+			max-width: 420px;
+			margin-bottom: 3em;
+			margin-right: 3em;
+		}
+
+		&__img {
+			img {
+				height: 470px;
+				width: 420px;
+			}
+		}
+	}
 }
 
 @media (min-width: 768px) {
@@ -232,7 +426,7 @@ body {
 
 		&__menu {
 			&-item {
-				font-size: 2.2rem;
+				font-size: 2.5rem;
 			}
 		}
 	}
@@ -243,10 +437,9 @@ body {
 	.header {
 		padding-left: 8em;
 
-		&__text{
+		&__text {
 			font-size: calc(10vmin + 8 * (5vw - 500px) / 400);
 		}
-		
 
 		&__btn {
 			font-size: 2.7rem;
@@ -254,7 +447,53 @@ body {
 			padding: 0.5em 1em;
 		}
 	}
+
+	// ------------------------------------------------------
+	// ABOUT-ME
+	// ------------------------------------------------------
+
+	.about-me {
+		&__title {
+			font-size: 3rem;
+		}
+
+		&__text {
+			font-size: 3rem;
+		}
+	}
+
+	// ------------------------------------------------------
+	// OFFERS
+	// ------------------------------------------------------
+
+	.offers {
+		&__description {
+			min-height: 1176px;
+		}
+
+		&__box {
+			max-width: 345px;
+		}
+		&__title {
+			font-size: 3rem;
+		}
+
+		&__text {
+			font-size: 2rem;
+		}
+
+		&__img {
+			img {
+				height: 385px;
+				width: 345px;
+			}
+		}
+	}
 }
+
+
+
+
 
 @media (min-width: 992px) {
 	// ------------------------------------------------------
@@ -295,9 +534,28 @@ body {
 
 	.header {
 		padding-left: 10em;
-		background-image: $linear, url('../img/header-big.jpg');
 
-		&__text{
+		&-zero {
+			display: none;
+		}
+
+		&-carousel {
+			display: block;
+		}
+
+		&-first {
+			background-image: $linear, url('../img/header-big-1.jpg');
+		}
+
+		&-second {
+			background-image: $linear, url('../img/header-big-2.jpg');
+		}
+
+		&-third {
+			background-image: $linear, url('../img/header-big-3.jpg');
+		}
+
+		&__text {
 			font-size: calc(9vmin + 8 * (5vw - 500px) / 400);
 		}
 
@@ -305,6 +563,84 @@ body {
 			font-size: 3rem;
 			margin-top: 1.5em;
 			padding: 0.5em 1em;
+		}
+	}
+
+	// ------------------------------------------------------
+	// ABOUT-ME
+	// ------------------------------------------------------
+
+	.about-me {
+		&__img {
+			height: 53vh;
+		}
+
+		&__title {
+			font-size: 2.5rem;
+		}
+
+		&__text {
+			font-size: 1.7rem;
+		}
+
+		&__box {
+			display: flex;
+
+			&-second {
+				.about-me__contents--first {
+					order: 1;
+				}
+				.about-me__img--third {
+					order: 0;
+				}
+
+				.about-me__contents--second {
+					order: 3;
+				}
+
+				.about-me__img--fourth {
+					order: 2;
+				}
+			}
+		}
+
+		&__contents {
+			width: 50%;
+		}
+		&__img {
+			width: 50%;
+		}
+	}
+
+	// ------------------------------------------------------
+	// OFFERSE
+	// ------------------------------------------------------
+
+	.offers {
+		&__description {
+			min-height: 825.19px;
+		}
+
+		&__description {
+			padding: 2em;
+			padding-bottom: 10em;
+		}
+		&__title {
+			font-size: 2.6rem;
+		}
+
+		&__text {
+			font-size: 1.6rem;
+		}
+
+		&__img {
+			img {
+				height: 400px;
+				width: 360px;
+			}
+		}
+		&__price{
+			font-size: 2rem;
 		}
 	}
 }
@@ -328,7 +664,7 @@ body {
 	.header {
 		padding-left: 20em;
 
-		&__text{
+		&__text {
 			font-size: calc(11vmin + 8 * (5vw - 500px) / 400);
 		}
 
@@ -338,7 +674,72 @@ body {
 			padding: 0.5em 1em;
 		}
 	}
+
+	// ------------------------------------------------------
+	// ABOUT-ME
+	// ------------------------------------------------------
+
+	.about-me {
+		&__img {
+			height: 45vh;
+		}
+
+		&__title {
+			font-size: 3rem;
+		}
+
+		&__text {
+			font-size: 1.9rem;
+		}
+	}
+
+	// ------------------------------------------------------
+	// OFFERSE
+	// ------------------------------------------------------
+
+	.offers {
+		&__description {
+			min-height: 972.19px;
+		}
+
+		&__box {
+			max-width: 360px;
+		}
+
+
+
+		&__text {
+			font-size: 1.8rem;
+		}
+
+		&__img {
+			img {
+				height: 400px;
+				width: 360px;
+			}
+		}
+	}
 }
 
 @media (min-width: 1400px) {
+
+		// ------------------------------------------------------
+	// OFFERSE
+	// ------------------------------------------------------
+
+	.offers{
+
+		.wrapper {
+			max-width: 1500px;
+		}
+
+		&__box{
+			margin-right: 0;
+			&-middle{
+
+				margin: 0 10em;
+
+			}
+		}
+	}
 }
