@@ -1,0 +1,479 @@
+@import './colors';
+
+@media (min-width: 375px) {
+	// ------------------------------------------------------
+	// OPOINION
+	// ------------------------------------------------------
+	.opinions {
+		&__box {
+			min-height: 328px;
+		}
+	}
+}
+
+@media (min-width: 500px) {
+	// ------------------------------------------------------
+	// OPOINION
+	// ------------------------------------------------------
+	.opinions {
+		&__box {
+			min-height: 290px;
+		}
+	}
+}
+
+@media (min-width: 576px) {
+	// ------------------------------------------------------
+	// NAV
+	// ------------------------------------------------------
+
+	.nav {
+		padding: 2em 2em 2em 4em;
+	}
+	// ------------------------------------------------------
+	// HEADER
+	// ------------------------------------------------------
+
+	.header {
+
+		padding-left: 6em;
+
+		&__btn {
+			font-size: 2.5rem;
+			margin-top: 1.5em;
+			padding: 0.5em 1em;
+		}
+	}
+
+	// ------------------------------------------------------
+	// OFFERS
+	// ------------------------------------------------------
+
+	.offers {
+		&__box {
+			max-width: 420px;
+			margin-bottom: 3em;
+			margin-right: 3em;
+		}
+
+		&__img {
+			img {
+				height: 470px;
+				width: 420px;
+			}
+		}
+	}
+
+	// ------------------------------------------------------
+	// OPOINION
+	// ------------------------------------------------------
+
+	.opinions {
+		&__box {
+			min-height: 250px;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	// ------------------------------------------------------
+	// NAV
+	// ------------------------------------------------------
+
+	.nav {
+		padding: 2em 2.5em 2em 5em;
+	}
+	// ------------------------------------------------------
+	// HEADER
+	// ------------------------------------------------------
+
+	.header {
+
+		padding-left: 8em;
+
+		&__text {
+			font-size: calc(10vmin + 8 * (5vw - 500px) / 400);
+		}
+
+		&__btn {
+			font-size: 2.5rem;
+			margin-top: 1.5em;
+			padding: 0.5em 1em;
+		}
+	}
+
+	// ------------------------------------------------------
+	// OFFERS
+	// ------------------------------------------------------
+
+	.offers {
+		background-image: $linear-offers, url('../img/offers-bg-big.jpg');
+		&__description {
+			min-height: 810px;
+		}
+
+		&__box {
+			max-width: 345px;
+		}
+		&__title {
+			font-size: 3rem;
+		}
+
+		&__img {
+			img {
+				height: 385px;
+				width: 345px;
+			}
+		}
+	}
+
+	// ------------------------------------------------------
+	// CONTACT
+	// ------------------------------------------------------
+
+	.contact {
+		.wrapper {
+			display: flex;
+			max-width: 1200px;
+		}
+
+		hr {
+			display: none;
+		}
+
+		&__info {
+			display: flex;
+			justify-content: center;
+			width: 30%;
+			margin-right: 6em;
+		}
+
+		&__logo {
+			margin-bottom: 0.5em;
+			font-size: 7rem;
+
+			&-first {
+				display: none;
+			}
+
+			&-second {
+				display: block;
+			}
+		}
+
+		&__data {
+			font-size: 1.5rem;
+		}
+
+		&__box {
+			width: 70%;
+		}
+
+		&__btn {
+			font-size: 1.5rem;
+
+			i {
+				font-size: 2rem;
+			}
+		}
+
+		&__name {
+			margin: 1.5em 0 0.4em 0;
+		}
+
+		&__input {
+			font-size: 1.3rem;
+		}
+	}
+	// ------------------------------------------------------
+	// OFFERS
+	// ------------------------------------------------------
+
+	.footer {
+		&__text {
+			font-size: 1.5rem;
+		}
+	}
+
+	// ------------------------------------------------------
+	// OPOINION
+	// ------------------------------------------------------
+
+	.opinions {
+		&__box {
+			min-height: 307px;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	// ------------------------------------------------------
+	// NAV
+	// ------------------------------------------------------
+
+	.nav {
+		padding: 2em 5em 2em 5em;
+
+		&__menu {
+			display: none;
+		}
+
+		&__burger {
+			display: none;
+		}
+
+		&__items {
+			display: block;
+		}
+
+		&__item {
+			position: relative;
+			text-decoration: none;
+			font-size: 1.6rem;
+			color: $main-color;
+			padding: 0.2em 1em;
+			font-weight: 500;
+			transition: color 0.3s;
+	
+
+			&:hover {
+				color: #e79107;
+			}
+		}
+	}
+	// ------------------------------------------------------
+	// HEADER
+	// ------------------------------------------------------
+
+	.header {
+
+		padding-left: 10em;
+
+		&-zero {
+			display: none;
+		}
+
+		&-carousel {
+			display: block;
+		}
+
+		&-first {
+			background-image: $linear, url('../img/header-big-1.jpg');
+		}
+
+		&-second {
+			background-image: $linear, url('../img/header-big-2.jpg');
+		}
+
+		&-third {
+			background-image: $linear, url('../img/header-big-3.jpg');
+		}
+
+		&__text {
+			font-size: calc(9vmin + 8 * (5vw - 500px) / 400);
+		}
+
+		&__btn {
+			font-size: 3rem;
+			margin-top: 1.5em;
+			padding: 0.5em 1em;
+		}
+	}
+
+	// ------------------------------------------------------
+	// ABOUT-ME
+	// ------------------------------------------------------
+
+	.about-me {
+		&__img {
+			height: 45vh;
+		}
+
+		&__title {
+			font-size: 2.5em;
+		}
+
+		&__box {
+			display: flex;
+
+			&-second {
+				.about-me__contents--first {
+					order: 1;
+				}
+				.about-me__img--third {
+					order: 0;
+				}
+
+				.about-me__contents--second {
+					order: 3;
+				}
+
+				.about-me__img--fourth {
+					order: 2;
+				}
+			}
+		}
+
+		&__contents {
+			width: 50%;
+		}
+		&__img {
+			width: 50%;
+		}
+	}
+
+	// ------------------------------------------------------
+	// OFFERSE
+	// ------------------------------------------------------
+
+	.offers {
+		&__description {
+			min-height: 760px;
+			padding: 2em;
+			padding-bottom: 10em;
+		}
+		&__title {
+			font-size: 2.6rem;
+		}
+
+		&__img {
+			img {
+				height: 400px;
+				width: 360px;
+			}
+		}
+		&__price {
+			font-size: 2rem;
+			span {
+				font-size: 2rem;
+			}
+		}
+	}
+
+	// ------------------------------------------------------
+	// OPOINION
+	// ------------------------------------------------------
+
+	.opinions {
+		&__box {
+			min-height: 270px;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	// ------------------------------------------------------
+	// NAV
+	// ------------------------------------------------------
+
+	.nav {
+		padding: 2em 10em 2em 10em;
+	}
+	// ------------------------------------------------------
+	// HEADER
+	// ------------------------------------------------------
+
+	.header {
+		// display: flex;
+		// align-items:flex-start;
+		padding-left: 20em;
+
+		&__text {
+			font-size: calc(11vmin + 8 * (5vw - 500px) / 400);
+		}
+
+		&__btn {
+			font-size: 3rem;
+			margin-top: 1.5em;
+			padding: 0.5em 1em;
+		}
+	}
+
+	// ------------------------------------------------------
+	// ABOUT-ME
+	// ------------------------------------------------------
+
+	.about-me {
+		&__img {
+			height: 40vh;
+		}
+
+		&__title {
+			font-size: 3rem;
+		}
+
+		&__text {
+			font-size: 1.6rem;
+		}
+	}
+
+	// ------------------------------------------------------
+	// OFFERSE
+	// ------------------------------------------------------
+
+	.offers {
+		&__description {
+			min-height: 720px;
+		}
+
+		&__box {
+			max-width: 360px;
+		}
+
+		&__img {
+			img {
+				height: 400px;
+				width: 360px;
+			}
+		}
+	}
+
+	// ------------------------------------------------------
+	// CONTACT
+	// ------------------------------------------------------
+
+	.contact {
+		&__info {
+			margin-right: 15em;
+		}
+	}
+
+	// ------------------------------------------------------
+	// FOOTER
+	// ------------------------------------------------------
+
+	.footer {
+		&__text {
+			font-size: 1.7rem;
+		}
+	}
+
+	// ------------------------------------------------------
+	// OPOINION
+	// ------------------------------------------------------
+
+	.opinions {
+		&__box {
+			min-height: 230px;
+		}
+	}
+}
+
+@media (min-width: 1400px) {
+	// ------------------------------------------------------
+	// OFFERSE
+	// ------------------------------------------------------
+
+	.offers {
+		.wrapper {
+			max-width: 1500px;
+		}
+
+		&__box {
+			margin-right: 0;
+			&-middle {
+				margin: 0 10em;
+			}
+		}
+	}
+}

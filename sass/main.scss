@@ -17,15 +17,11 @@ html {
 body {
 	font-family: 'Hind Siliguri', sans-serif;
 	font-family: 'Poppins', sans-serif;
-	// background-color: #cdd2d6de;
-	// background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url('../img/pexels-henry-&-co-1939485.jpg');
-	// background-position: center;
-	// background-size: cover;
-	// background-attachment: fixed;
-	// background-color: linear-gradient(#F5F7FA,#B8C6DB );
-	// background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+
 
 	background-color: rgb(250, 248, 248);
+
+
 }
 
 // ------------------------------------------------------
@@ -37,7 +33,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	z-index: 1000;
+	z-index: 10000;
 	color: $main-color;
 	padding: 2em 1.5em 2em 3em;
 	width: 100%;
@@ -49,12 +45,15 @@ body {
 	}
 
 	&__logo {
-		font-size: 3rem;
+		font-size: 2.5rem;
+		p {
+			margin-bottom: 0;
+		}
 	}
 
 	&__menu {
 		position: absolute;
-		top: 87px;
+		top: 80px;
 		left: 0;
 		width: 100%;
 		transform: translateX(100%);
@@ -69,7 +68,7 @@ body {
 		&-item {
 			color: $main-color;
 			text-transform: uppercase;
-			font-size: 1.5rem;
+			font-size: 1.8rem;
 			font-weight: 400;
 			text-decoration: none;
 			color: $item-color;
@@ -163,18 +162,27 @@ body {
 	width: 100%;
 	background-position: center;
 	background-size: cover;
-	display: flex;
+	display: flex !important;
 	flex-direction: column;
-	align-items: flex-start;
+	align-items:flex-start;
 	justify-content: center;
 	padding-left: 3em;
+
 
 	&-carousel {
 		display: none;
 	}
 
-	&-zero {
+	&-first {
 		background-image: $linear, url('../img/header-min-1.jpg');
+	}
+
+	&-second {
+		background-image: $linear, url('../img/header-min-2.jpg');
+	}
+
+	&-third {
+		background-image: $linear, url('../img/header-big-3.jpg');
 	}
 
 	&__text {
@@ -193,9 +201,6 @@ body {
 		border-radius: 5px;
 		color: $main-color;
 		background-color: #e79107;
-		-webkit-box-shadow: 0px 1px 23px -6px rgba(231, 145, 7, 1);
-		-moz-box-shadow: 0px 1px 23px -6px rgba(231, 145, 7, 1);
-		box-shadow: 0px 1px 23px -6px rgba(231, 145, 7, 1);
 		transition: transform 0.3s;
 
 		&:hover {
@@ -211,6 +216,7 @@ body {
 // ------------------------------------------------------
 
 .about-me {
+	position: relative;
 	&__box {
 		overflow: hidden;
 	}
@@ -222,13 +228,13 @@ body {
 	}
 
 	&__title {
-		font-size: 2.5rem;
+		font-size: 3rem;
 		margin: 0.5em 0;
 		font-weight: 700;
 	}
 
 	&__text {
-		font-size: 1.8rem;
+		font-size: 1.6rem;
 	}
 
 	&__img {
@@ -247,19 +253,19 @@ body {
 		// }
 
 		&--first {
-			background-image: url('../img/header-min-1.jpg');
-		}
-
-		&--second {
 			background-image: url('../img/about-1.jpg');
 		}
 
-		&--third {
+		&--second {
 			background-image: url('../img/about-2.jpg');
 		}
 
-		&--fourth {
+		&--third {
 			background-image: url('../img/about-3.jpg');
+		}
+
+		&--fourth {
+			background-image: url('../img/about-4.jpg');
 		}
 	}
 }
@@ -269,16 +275,22 @@ body {
 // ------------------------------------------------------
 
 .offers {
-	// background-color: #f1f1f1 !important;
-	background-image: $linear-offers, url('../img/sports-966991_1920.jpg');
+	position: relative;
+	background-image: $linear-offers, url('../img/offers-bg-min.jpg');
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
+	background-color: $bacground-dark;
+
+	hr{
+		margin: 1.5em 0;
+	}
+
 	.wrapper {
 		max-width: 1250px;
 	}
 
-	.section-heading{
+	.section-heading {
 		color: $main-color;
 	}
 
@@ -287,8 +299,6 @@ body {
 		text-align: center;
 		color: $main-color;
 		letter-spacing: 0.5px;
-		font-size: 2rem !important;
-
 	}
 
 	.section-heading {
@@ -308,8 +318,7 @@ body {
 		max-width: 270px;
 		margin-bottom: 2em;
 		margin-right: 2em;
-
-		border-right: 4px solid #ff9f00;
+		border-right: 4px solid #e79107;
 	}
 
 	&__description {
@@ -318,7 +327,6 @@ body {
 		padding-bottom: 10em;
 		min-height: 420px;
 		overflow: hidden;
-	
 	}
 
 	&__title {
@@ -337,21 +345,24 @@ body {
 		left: 0;
 		bottom: 0;
 		width: 100%;
-		background-color: #ff9f00;
+		background-color: #e79107;
 		text-align: center;
-		padding: 1em ;
+		padding: 1em;
 		z-index: 1000;
-		transition: transform 0.5s ease 0s;
+		transition: 0.3s;
 
-		span{
+		span {
 			color: $main-color;
 			font-size: 1.8rem;
 		}
 
-		&:hover{
+		&:hover {
 			transform: scale(1.2);
+			background-color: #ff9f00;
+			
 		}
-		
+
+
 	}
 
 	&__img {
@@ -368,378 +379,208 @@ body {
 	}
 }
 
-@media (min-width: 576px) {
-	// ------------------------------------------------------
-	// NAV
-	// ------------------------------------------------------
+// ------------------------------------------------------
+// CONTACT
+// ------------------------------------------------------
 
-	.nav {
-		padding: 2em 2em 2em 4em;
+.contact {
+	padding: 5em 3em;
+	padding-top: 12em;
+	color: $main-color;
+	background-color: $bacground-dark;
+	z-index: 1;
 
-		&__menu {
-			&-item {
-				font-size: 2rem;
-			}
-		}
-	}
-	// ------------------------------------------------------
-	// HEADER
-	// ------------------------------------------------------
-
-	.header {
-		padding-left: 6em;
-
-		&__btn {
-			font-size: 2.5rem;
-			margin-top: 1.5em;
-			padding: 0.5em 1em;
-		}
+	hr {
+		margin: 4em 0 4em 0;
 	}
 
-	// ------------------------------------------------------
-	// OFFERS
-	// ------------------------------------------------------
-
-	.offers {
-		&__box {
-			max-width: 420px;
-			margin-bottom: 3em;
-			margin-right: 3em;
-		}
-
-		&__img {
-			img {
-				height: 470px;
-				width: 420px;
-			}
-		}
-	}
-}
-
-@media (min-width: 768px) {
-	// ------------------------------------------------------
-	// NAV
-	// ------------------------------------------------------
-
-	.nav {
-		padding: 2em 2.5em 2em 5em;
-
-		&__menu {
-			&-item {
-				font-size: 2.5rem;
-			}
-		}
-	}
-	// ------------------------------------------------------
-	// HEADER
-	// ------------------------------------------------------
-
-	.header {
-		padding-left: 8em;
-
-		&__text {
-			font-size: calc(10vmin + 8 * (5vw - 500px) / 400);
-		}
-
-		&__btn {
-			font-size: 2.7rem;
-			margin-top: 1.5em;
-			padding: 0.5em 1em;
-		}
+	&__info {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
 	}
 
-	// ------------------------------------------------------
-	// ABOUT-ME
-	// ------------------------------------------------------
-
-	.about-me {
-		&__title {
-			font-size: 3rem;
-		}
-
-		&__text {
-			font-size: 3rem;
-		}
-	}
-
-	// ------------------------------------------------------
-	// OFFERS
-	// ------------------------------------------------------
-
-	.offers {
-		&__description {
-			min-height: 1176px;
-		}
-
-		&__box {
-			max-width: 345px;
-		}
-		&__title {
-			font-size: 3rem;
-		}
-
-		&__text {
-			font-size: 2rem;
-		}
-
-		&__img {
-			img {
-				height: 385px;
-				width: 345px;
-			}
-		}
-	}
-}
-
-
-
-
-
-@media (min-width: 992px) {
-	// ------------------------------------------------------
-	// NAV
-	// ------------------------------------------------------
-
-	.nav {
-		padding: 2em 5em 2em 5em;
-
-		&__menu {
-			display: none;
-		}
-
-		&__burger {
-			display: none;
-		}
-
-		&__items {
-			display: block;
-		}
-
-		&__item {
-			text-decoration: none;
-			font-size: 2rem;
-			color: $main-color;
-			padding: 0.2em 1em;
-			font-weight: 500;
-			transition: color 0.3s;
-
-			&:hover {
-				color: #e79107;
-			}
-		}
-	}
-	// ------------------------------------------------------
-	// HEADER
-	// ------------------------------------------------------
-
-	.header {
-		padding-left: 10em;
-
-		&-zero {
-			display: none;
-		}
-
-		&-carousel {
-			display: block;
-		}
+	&__logo {
+		font-size: 5rem;
+		text-transform: uppercase;
+		text-align: center;
 
 		&-first {
-			background-image: $linear, url('../img/header-big-1.jpg');
+			margin-bottom: 0.5em;
 		}
 
 		&-second {
-			background-image: $linear, url('../img/header-big-2.jpg');
-		}
-
-		&-third {
-			background-image: $linear, url('../img/header-big-3.jpg');
-		}
-
-		&__text {
-			font-size: calc(9vmin + 8 * (5vw - 500px) / 400);
-		}
-
-		&__btn {
-			font-size: 3rem;
-			margin-top: 1.5em;
-			padding: 0.5em 1em;
+			display: none;
 		}
 	}
 
-	// ------------------------------------------------------
-	// ABOUT-ME
-	// ------------------------------------------------------
-
-	.about-me {
-		&__img {
-			height: 53vh;
+	&__data {
+		margin-bottom: 1em;
+		font-size: 1.6rem;
+		font-weight: 300;
+		i {
+			margin-right: 1em;
 		}
+	}
 
-		&__title {
-			font-size: 2.5rem;
+	&__social {
+		margin-top: 0.5em;
+		font-size: 2.5rem;
+		a {
+			padding-right: 1em;
+			text-decoration: none;
+			color: $main-color;
+			transition: color 0.3s;
+
+			&:hover {
+				color: #ff9f00;
+			}
 		}
+	}
 
-		&__text {
-			font-size: 1.7rem;
-		}
+	&__heading {
+		font-size: 3rem;
+		text-transform: uppercase;
+		text-align: center;
+	}
 
-		&__box {
+	&__box {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		form {
 			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			max-width: 720px;
+			min-width: 205px;
 
-			&-second {
-				.about-me__contents--first {
-					order: 1;
-				}
-				.about-me__img--third {
-					order: 0;
-				}
+			textarea {
+				min-height: 110px;
+				max-height: 200px;
+				min-width: 100%;
+				max-width: 100%;
 
-				.about-me__contents--second {
-					order: 3;
-				}
-
-				.about-me__img--fourth {
-					order: 2;
-				}
+			
 			}
-		}
-
-		&__contents {
-			width: 50%;
-		}
-		&__img {
-			width: 50%;
 		}
 	}
 
-	// ------------------------------------------------------
-	// OFFERSE
-	// ------------------------------------------------------
+	&__btn {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 2em;
+		padding: 1em 1em;
+		width: 16em;
+		font-size: 1.3rem;
+		font-weight: 300;
+		background: none;
+		color: $main-color;
+		border: none;
+		cursor: pointer;
+		background-color: #e79107;
+		transition: background-color 0.3s;
 
-	.offers {
-		&__description {
-			min-height: 825.19px;
+		&:hover {
+			background-color: #ff9f00;
 		}
 
-		&__description {
-			padding: 2em;
-			padding-bottom: 10em;
-		}
-		&__title {
-			font-size: 2.6rem;
-		}
-
-		&__text {
-			font-size: 1.6rem;
-		}
-
-		&__img {
-			img {
-				height: 400px;
-				width: 360px;
-			}
-		}
-		&__price{
+		i {
 			font-size: 2rem;
 		}
 	}
+
+	&__name {
+		margin: 1em 0 0.4em 0;
+		font-size: 1.4rem;
+		font-weight: 300;
+	}
+
+	&__input {
+		padding: 1em 1.5em;
+		font-size: 1.3rem;
+	}
 }
 
-@media (min-width: 1200px) {
-	// ------------------------------------------------------
-	// NAV
-	// ------------------------------------------------------
+// ------------------------------------------------------
+// OPOINION
+// ------------------------------------------------------
 
-	.nav {
-		padding: 2em 10em 2em 10em;
+.opinions {
+	position: relative;
+	&__box {
+		position: relative;
+		min-height: 445px;
+		margin: 5em 2em;
+		padding: 2em;
+		border-radius: 5px;
+		box-shadow: 3px 3px 10px #2e2e2e2e;
+		transition: transform 0.3s;
 
-		&__item {
-			font-size: 2.5rem;
+		&:hover {
+			transform: scale(0.95);
 		}
-	}
-	// ------------------------------------------------------
-	// HEADER
-	// ------------------------------------------------------
-
-	.header {
-		padding-left: 20em;
-
-		&__text {
-			font-size: calc(11vmin + 8 * (5vw - 500px) / 400);
-		}
-
-		&__btn {
-			font-size: 3rem;
-			margin-top: 1.5em;
-			padding: 0.5em 1em;
-		}
-	}
-
-	// ------------------------------------------------------
-	// ABOUT-ME
-	// ------------------------------------------------------
-
-	.about-me {
-		&__img {
-			height: 45vh;
-		}
-
-		&__title {
-			font-size: 3rem;
-		}
-
-		&__text {
-			font-size: 1.9rem;
-		}
-	}
-
-	// ------------------------------------------------------
-	// OFFERSE
-	// ------------------------------------------------------
-
-	.offers {
-		&__description {
-			min-height: 972.19px;
-		}
-
-		&__box {
-			max-width: 360px;
-		}
-
-
-
-		&__text {
-			font-size: 1.8rem;
-		}
-
-		&__img {
+		&-img {
+			position: absolute;
+			top: -40px;
+			left: 30px;
 			img {
-				height: 400px;
-				width: 360px;
+				width: 80px;
+				height: 80px;
+				border-radius: 50%;
 			}
+		}
+
+		&-icon {
+		
+			text-align: right;
+			i {
+		
+				font-size: 2rem;
+				color: #ff9f00;
+			}
+		}
+
+		&-text {
+			margin-top: 2em;
+			font-size: 1.4rem;
+		}
+
+		&-name {
+			font-size: 1.4rem;
+			margin-top: 0.5em;
 		}
 	}
 }
 
-@media (min-width: 1400px) {
+// ------------------------------------------------------
+// FOOTER
+// ------------------------------------------------------
 
-		// ------------------------------------------------------
-	// OFFERSE
-	// ------------------------------------------------------
+.footer {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: $bacground-dark;
 
-	.offers{
+	&__text {
+		padding: 1em 0;
+		font-size: 1.3rem;
+		color: $main-color;
+	}
 
-		.wrapper {
-			max-width: 1500px;
-		}
+	a {
+		text-decoration: none;
+		color: #e79107;
+		transition: color 0.3s;
 
-		&__box{
-			margin-right: 0;
-			&-middle{
-
-				margin: 0 10em;
-
-			}
+		&:hover {
+			color: #ff9f00;
 		}
 	}
 }

@@ -6,6 +6,13 @@ const navBtn = document.querySelector('.nav__burger');
 const navMenu = document.querySelector('.nav__menu');
 const navMenuItem = document.querySelectorAll('.nav__menu-item');
 
+const footerYear = document.querySelector('.footer__year');
+
+const handleCurrentYear = () => {
+	const year = new Date().getFullYear()
+	footerYear.innerText = year
+}
+
 const handleNav = () => {
     navMenu.classList.toggle('nav__menu--active')
     navBurger.classList.toggle('nav__burger-bars--dark');
@@ -72,4 +79,6 @@ window.addEventListener('scroll', function() {
   }
 });
 
+
+handleCurrentYear()
 
