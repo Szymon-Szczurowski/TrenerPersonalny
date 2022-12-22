@@ -35,13 +35,11 @@
 	// ------------------------------------------------------
 
 	.header {
-
 		padding-left: 6em;
-
 		&__btn {
-			font-size: 2.5rem;
 			margin-top: 1.5em;
 			padding: 0.5em 1em;
+			font-size: 2.5rem;
 		}
 	}
 
@@ -88,7 +86,6 @@
 	// ------------------------------------------------------
 
 	.header {
-
 		padding-left: 8em;
 
 		&__text {
@@ -144,8 +141,8 @@
 		&__info {
 			display: flex;
 			justify-content: center;
-			width: 30%;
 			margin-right: 6em;
+			width: 30%;
 		}
 
 		&__logo {
@@ -228,25 +225,24 @@
 
 		&__item {
 			position: relative;
-			text-decoration: none;
-			font-size: 1.6rem;
-			color: $main-color;
 			padding: 0.2em 1em;
+			font-size: 1.6rem;
+			text-decoration: none;
 			font-weight: 500;
+			color: $main-color;
 			transition: color 0.3s;
-	
 
 			&:hover {
-				color: #e79107;
+				color: $orange-dark;
 			}
 		}
 	}
+	
 	// ------------------------------------------------------
 	// HEADER
 	// ------------------------------------------------------
 
 	.header {
-
 		padding-left: 10em;
 
 		&-zero {
@@ -274,9 +270,10 @@
 		}
 
 		&__btn {
-			font-size: 3rem;
 			margin-top: 1.5em;
 			padding: 0.5em 1em;
+			font-size: 3rem;
+
 		}
 	}
 
@@ -328,9 +325,10 @@
 
 	.offers {
 		&__description {
-			min-height: 760px;
 			padding: 2em;
 			padding-bottom: 10em;
+			min-height: 760px;
+
 		}
 		&__title {
 			font-size: 2.6rem;

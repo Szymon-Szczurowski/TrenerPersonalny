@@ -10,7 +10,6 @@
 
 .section-padding {
 	padding: 10em 1em;
-
 }
 
 .section-heading {
@@ -21,9 +20,8 @@
 	font-weight: 600;
 	text-transform: uppercase;
 	text-align: center;
-	color: rgb(20, 21, 22);
-	// color: $section-color;
 	letter-spacing: 2px;
+	color: $heading-color;
 }
 
 .diagonal-lines {
@@ -38,38 +36,48 @@
 	);
 }
 
-section{
+section {
 	overflow: hidden;
 }
 
-.block{
+.block {
 	position: absolute;
 	height: 50px;
 	width: 40%;
-	background-color: rgb(250, 248, 248);
+	background-color: $body-bgc;
 
-
-
-	&-left{
+	&-left {
 		bottom: 0;
 		left: -50px;
 		transform: skew(60deg);
-		&--dark{
-			background-color: $bacground-dark;
+		&--dark {
+			background-color: $background-dark;
 		}
 	}
 
-	&-right{
+	&-right {
 		top: 0;
 		right: -50px;
 		transform: skew(60deg);
-		
 
-		&--dark{
-			background-color: $bacground-dark;
+		&--dark {
+			background-color: $background-dark;
 		}
-
 	}
 }
 
+.nav-style-scroll {
+	color: $item-color !important;
+	background-color: $main-color;
+}
 
+.navBurger-style-scroll {
+	border-color: $item-color;
+}
+
+.item-color-one {
+	color: $item-color !important;
+}
+.item-color-two {
+	color: $orange-dark;
+}

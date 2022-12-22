@@ -16,9 +16,9 @@
     padding-left: 6em;
   }
   .header__btn {
-    font-size: 2.5rem;
     margin-top: 1.5em;
     padding: 0.5em 1em;
+    font-size: 2.5rem;
   }
   .offers__box {
     max-width: 420px;
@@ -74,8 +74,8 @@
   .contact__info {
     display: flex;
     justify-content: center;
-    width: 30%;
     margin-right: 6em;
+    width: 30%;
   }
   .contact__logo {
     margin-bottom: 0.5em;
@@ -127,11 +127,11 @@
   }
   .nav__item {
     position: relative;
-    text-decoration: none;
-    font-size: 1.6rem;
-    color: #fff;
     padding: 0.2em 1em;
+    font-size: 1.6rem;
+    text-decoration: none;
     font-weight: 500;
+    color: #fff;
     transition: color 0.3s;
   }
   .nav__item:hover {
@@ -159,9 +159,9 @@
     font-size: calc(9vmin + 8 * (5vw - 500px) / 400);
   }
   .header__btn {
-    font-size: 3rem;
     margin-top: 1.5em;
     padding: 0.5em 1em;
+    font-size: 3rem;
   }
   .about-me__img {
     height: 45vh;
@@ -191,9 +191,9 @@
     width: 50%;
   }
   .offers__description {
-    min-height: 760px;
     padding: 2em;
     padding-bottom: 10em;
+    min-height: 760px;
   }
   .offers__title {
     font-size: 2.6rem;
