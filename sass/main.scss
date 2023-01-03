@@ -354,6 +354,7 @@ body {
 		img {
 			height: 300px;
 			width: 270px;
+			object-fit: cover;
 			transition: transform 0.5s ease 0s;
 			&:hover {
 				transform: scale(1.2);
@@ -513,6 +514,7 @@ body {
 				width: 80px;
 				height: 80px;
 				border-radius: 50%;
+				object-fit: cover;
 			}
 		}
 
